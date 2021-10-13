@@ -1,0 +1,108 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+.btn {
+    border-width: 2px;
+    border-radius: 40px;
+}
+
+.btn:hover {
+    border: 2px solid #999;
+    box-shadow: inset 0px 0px 0px 2px #fff;
+}
+
+.btn-secondary {
+    background-color: #363636;
+    border-color: #363636;
+}
+.btn-secondary:hover {
+    background-color: #5c636a;
+    border-color: #5c636a;
+}
+
+.btn-danger {
+    background-color: #cd3d0f;
+    border-color: #cd3d0f;
+}
+.btn-danger:hover {
+    background-color: #cd3d0f;
+    border-color: #cd3d0f;
+    box-shadow: inset 0px 0px 0px 2px #000;
+}
+
+header{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100px;
+    background-color: #fff;
+}
+
+#cs-headup{
+    height: 36px;
+    background-color: black;
+}
+
+#cs-headup img{
+    width: 75px;
+    margin-right: 10px;
+}
+
+header nav{
+    height: 64px;
+}
+header .nav-item:not(.cs-cerca){
+    margin-right: 10px;
+}
+
+header .navbar-light .navbar-nav .nav-link {
+    color: #000;
+}
+header .navbar-light .navbar-nav .nav-link:hover,  header .navbar-light .navbar-nav .nav-link.show {
+       color: #0070d1;
+}
+   header nav .cs-cerca {
+    margin-left: 10px;
+}
+header nav .cs-cerca img {
+    height: 23px;
+}
+   
+.cs-jumbo-display {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+
+.cs-jumbo-display img {
+    max-width: 60%;
+    margin-bottom: 30px;
+}
+
+.cs-jumbo-display h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+.cs-jumbo-display p{
+    margin-bottom: 30px;
+}
+
+.cs-jumbo-grid {
+    padding: 30px 0;
+}
+.cs-jumbo-grid a img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+#cs-jumbo-1 .cs-jumbo-display {
+    background-image: url(../img/jumbo-bg.png);
+    padding: 250px 0 50px 0;
+    color: white;
+}
