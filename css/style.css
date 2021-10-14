@@ -37,6 +37,28 @@ a, a:hover{
     box-shadow: inset 0px 0px 0px 2px #000;
 }
 
+.btn-light {
+    background-color: #f5f5f5;
+    border-color: #f5f5f5;
+}
+.btn-light:hover {
+    background-color: #f5f5f5;
+    border-color: #f5f5f5;
+    box-shadow: inset 0px 0px 0px 2px #161c3b;
+}
+
+.btn-light2 {
+    background-color: white;
+    border-color: white;
+    color: #2d64e6;
+}
+.btn-light2:hover {
+    background-color: white;
+    border-color: white;
+    box-shadow: 0px 0px 0px 3px rgba(217, 218, 220, .3);
+    color: #2d64e6;
+}
+
 header{
     font-family: Arial, Helvetica, sans-serif;
     height: 100px;
@@ -64,45 +86,195 @@ header .navbar-light .navbar-nav .nav-link {
     color: #000;
 }
 header .navbar-light .navbar-nav .nav-link:hover,  header .navbar-light .navbar-nav .nav-link.show {
-       color: #0070d1;
+    color: #0070d1;
 }
-   header nav .cs-cerca {
+header nav .cs-cerca {
     margin-left: 10px;
 }
 header nav .cs-cerca img {
     height: 23px;
 }
-   
-.cs-jumbo-display {
+
+.jumbo-display {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 100px 0;
 }
 
-.cs-jumbo-display img {
+.jumbo-display img {
     max-width: 60%;
     margin-bottom: 30px;
 }
 
-.cs-jumbo-display h2 {
+.jumbo-display h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
 }
-.cs-jumbo-display p{
+.jumbo-display p{
     margin-bottom: 30px;
 }
 
-.cs-jumbo-grid {
+.griglia {
     padding: 30px 0;
 }
-.cs-jumbo-grid a img {
+.griglia a img {
     max-width: 100%;
     border-radius: 20px;
 }
 
-#cs-jumbo-1 .cs-jumbo-display {
+#jumbo-1 .jumbo-display {
     background-image: url(../img/jumbo-bg.png);
     padding: 250px 0 50px 0;
     color: white;
+}
+
+#jumbo-1 .griglia a img {
+    padding: 3px;
+    background-color: #fff;
+    border: solid 2px transparent;
+    position: relative;
+    top: 0;
+    transition: all 0.4s ease-in-out;
+}
+#jumbo-1 .griglia a:hover img {
+    top: -10px;
+}
+
+#jumbo-1  .griglia .cs-active {
+    border-color: #0072ce;
+}
+
+/* jumbo 2 */
+#jumbo-2 .jumbo-display {
+    background-image:url(../img/it-takes-two-hero-banner-desktop.jpg);
+    padding: 50px 0;
+    color: white;
+}
+#jumbo-2 .griglia{
+    background-color: #1f1f1f;
+    color: white;
+}
+
+#jumbo-2 h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+#jumbo-2 h4 {
+    font-size: 1.5rem;
+}
+#jumbo-2 .griglia a span {
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+}
+
+#jumbo-3 .jumbo-display {
+    background-image: none;
+    background-color: #bebcbb;
+    padding: 0;
+    color: #1f1f1f;
+}
+
+
+
+#jumbo-3 #ps5 .cs-cont_img{
+    max-width: initial;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+/* section play station 5 */
+
+#ps5 .jumbo-display {
+    background-image: none;
+    background-color: transparent;
+    padding:0;
+    color: #1f1f1f;
+}
+#ps5 .jumbo-display p {
+    font-size: 1.2rem;
+    color: #727272;
+}
+
+#ps5-griglia {
+    margin: 35px 0;
+}
+#ps5-griglia a {
+    display: block;
+    height: 100%;
+    padding-bottom: 5px;
+    opacity: .7;
+    transition: all 0.5s ease-in-out;
+}
+#ps5-griglia a:hover {
+    opacity: 1;
+}
+#ps5-griglia a.cs-active {
+    border-bottom: solid 2px #0072ce;
+    opacity: 1;
+}
+#ps5-griglia img {
+    max-width: 50%;
+    margin-bottom: 10px;
+}
+#ps5-griglia span {
+    color: #1f1f1f;
+}
+
+@media screen and (max-width:767px) {
+#ps5 .jumbo-display {
+    padding-bottom: 0;
+}
+#ps5-griglia {
+    margin: 0;
+}
+#ps5-griglia img {
+    max-width: 100%;
+}
+
+}
+
+/* section play station 4 */
+#ps4{
+    margin-bottom: 70px;
+}
+
+#ps4 .griglia h3 {
+    font-size: 2.3rem;
+    color: #1f1f1f;
+    margin-bottom: 20px;
+}
+#ps4 .griglia p {
+    font-size: 1.3rem;
+    color: #727272;
+    margin-bottom: 20px;
+}
+
+ .titolo h2 {
+    font-size: 2rem;
+}
+
+.griglia img {
+    max-width: 100%;
+}
+
+.titolo {
+    text-align: center;
+    margin: 70px 0;
+    color: #1f1f1f;
+}
+.titolo h5 {
+    color: #0072ce;
+    font-size: .9rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.titolo h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+.titolo h4 {
+    font-size: 1.3rem;
+    color: #727272;
 }
