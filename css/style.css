@@ -1,25 +1,25 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    color: #fff;
+    color: white;
 }
-
+/* link */
 a, a:hover{
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 sup {
-    font-size: 0.5em;
+    font-size: 0.5em !important;
 }
-
+/* button */
 .btn {
     border-width: 2px;
-    border-radius: 40px;
+    border-radius: 40px !important;
 }
 
 .btn:hover {
     border: 2px solid #999;
-    box-shadow: inset 0px 0px 0px 2px #fff;
+    box-shadow: inset 0px 0px 0px 2px white;
 }
 
 .btn-primary, .btn-primary:hover {
@@ -28,8 +28,8 @@ sup {
 }
 
 .btn-secondary {
-    background-color: #363636;
-    border-color: #363636;
+    background-color: #363636 !important;
+    border-color: #363636 !important;
 }
 .btn-secondary:hover {
     background-color: #5c636a;
@@ -37,8 +37,8 @@ sup {
 }
 
 .btn-danger {
-    background-color: #cd3d0f;
-    border-color: #cd3d0f;
+    background-color: #cd3d0f !important;
+    border-color: #cd3d0f !important;
 }
 .btn-danger:hover {
     background-color: #cd3d0f;
@@ -47,19 +47,31 @@ sup {
 }
 
 .btn-light {
-    background-color: #f5f5f5;
-    border-color: #f5f5f5;
+    background-color: white;
+    border-color: white;
 }
 .btn-light:hover {
-    background-color: #f5f5f5;
-    border-color: #f5f5f5;
+    background-color: white;
+    border-color: white;
     box-shadow: inset 0px 0px 0px 2px #161c3b;
 }
 
+.btn-light2 {
+    background-color: #d9dadc !important;
+    border-color: #d9dadc;
+    color: #2d64e6 !important;
+}
+.btn-light2:hover {
+    background-color: #d9dadc;
+    border-color: #d9dadc;
+    box-shadow: 0px 0px 0px 3px rgba(217, 218, 220, .3);
+    color: #2d64e6;
+}
+/* header */
 header{
     font-family: Arial, Helvetica, sans-serif;
     height: 100px;
-    background-color: #fff;
+    background-color: white;
 }
 
 #cs-headup{
@@ -94,7 +106,7 @@ header nav .cs-cerca img {
 
 @media screen and (max-width: 991px) {
     header .navbar .container-fluid {
-        background-color: #fff;
+        background-color: white;
     }
     header .nav-item:not(.cs-cerca){
         margin-right: 0;
@@ -118,7 +130,7 @@ header nav .cs-cerca img {
         width: 50%;
     }
 }
-
+/* jumbo-display */
 .jumbo-display {
     background-position: center;
     background-size: cover;
@@ -138,7 +150,7 @@ header nav .cs-cerca img {
 .jumbo-display p{
     margin-bottom: 30px;
 }
-
+/* griglia-jumbo */
 .griglia-jumbo {
     padding: 30px 0;
 }
@@ -155,7 +167,7 @@ header nav .cs-cerca img {
 
 #jumbo-1 .griglia-jumbo a img {
     padding: 3px;
-    background-color: #fff;
+    background-color: white;
     border: solid 2px transparent;
     position: relative;
     top: 0;
@@ -190,25 +202,24 @@ header nav .cs-cerca img {
 #jumbo-2 .griglia-jumbo a span {
     display: block;
     margin-top: 10px;
-    color: #fff;
+    color: white;
 }
-
+/* jumbo-3 */
 #jumbo-3 .jumbo-display {
     background-image: none;
     background-color: #bebcbb;
     padding: 0;
     color: #1f1f1f;
 }
-
-
+/* jumbo-4 */
 #jumbo-4 .jumbo-display {
     background-image: none;
     background-color: #161c3b;
     padding: 0;
-    color: #f5f5f5;
+    color: white;
 }
 
-
+/* ps5 */
 #jumbo-3 .container-img, #jumbo-4 .container-img,
 #ps5 .container-img {
     max-width: initial;
@@ -255,32 +266,33 @@ header nav .cs-cerca img {
 @media screen and (max-width:767px) {
 #ps5 .jumbo-display {
     padding-bottom: 0;
-}
+    }
 #ps5-griglia {
     margin: 0;
-}
+    }
 #ps5-griglia img {
     max-width: 100%;
-}
+    }
 
 }
 
+/* ps4 */
 #ps4 {
     margin-bottom: 70px;
 }
 
-#ps4 .griglia h3 {
+#ps4 .griglia-jumbo h3 {
     font-size: 2.3rem;
     color: #1f1f1f;
     margin-bottom: 20px;
 }
-#ps4 .griglia p {
+#ps4 .griglia-jumbo p {
     font-size: 1.3rem;
     color: #727272;
     margin-bottom: 20px;
 }
 
-
+/* social */
 #sconti-ps {
     margin-bottom: 30px;
 }
@@ -296,7 +308,7 @@ header nav .cs-cerca img {
 .griglia img {
     max-width: 100%;
 }
-
+/* titoli */
 .titolo {
     text-align: center;
     margin: 70px 0;
@@ -326,7 +338,7 @@ footer{
 }
 
 footer a, footer a:hover {
-    color: #fff;
+    color: white;
 }
 
 footer .logo {
@@ -343,13 +355,13 @@ footer li {
     list-style-type: none;
     margin-bottom: 10px;
 }
-
+/* info */
 #info{
-    color: #fff;
+    color: white;
 }
 
 #info a, #info a:hover{
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 
 #info img {
