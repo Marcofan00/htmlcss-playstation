@@ -8,6 +8,10 @@ a, a:hover{
     text-decoration: none;
 }
 
+sup {
+    font-size: 0.5em;
+}
+
 .btn {
     border-width: 2px;
     border-radius: 40px;
@@ -16,6 +20,11 @@ a, a:hover{
 .btn:hover {
     border: 2px solid #999;
     box-shadow: inset 0px 0px 0px 2px #fff;
+}
+
+.btn-primary, .btn-primary:hover {
+    background-color: #2d64e6;
+    border-color: #2d64e6;
 }
 
 .btn-secondary {
@@ -95,6 +104,33 @@ header nav .cs-cerca img {
     height: 23px;
 }
 
+@media screen and (max-width: 991px) {
+    header .navbar .container-fluid {
+        background-color: #fff;
+    }
+    header .nav-item:not(.cs-cerca){
+        margin-right: 0;
+    }
+    header .dropdown-menu {
+        width: 100%;
+        text-align: left;
+        border-top: solid 1px #999;
+        border-bottom: solid 1px #999;
+        border-radius: 0;
+    }
+    header nav .cs-cerca {
+        margin: 15px 0;
+        border: solid 1px #999;
+    }
+    header nav .cs-cerca img {
+        height: 35px;
+    }
+    header .btn {
+        margin-top: 15px;
+        width: 50%;
+    }
+}
+
 .jumbo-display {
     background-position: center;
     background-size: cover;
@@ -115,10 +151,10 @@ header nav .cs-cerca img {
     margin-bottom: 30px;
 }
 
-.griglia {
+.griglia-jumbo {
     padding: 30px 0;
 }
-.griglia a img {
+.griglia-jumbo a img {
     max-width: 100%;
     border-radius: 20px;
 }
@@ -129,7 +165,7 @@ header nav .cs-cerca img {
     color: white;
 }
 
-#jumbo-1 .griglia a img {
+#jumbo-1 .griglia-jumbo a img {
     padding: 3px;
     background-color: #fff;
     border: solid 2px transparent;
@@ -137,11 +173,11 @@ header nav .cs-cerca img {
     top: 0;
     transition: all 0.4s ease-in-out;
 }
-#jumbo-1 .griglia a:hover img {
+#jumbo-1 .griglia-jumbo a:hover img {
     top: -10px;
 }
 
-#jumbo-1  .griglia .cs-active {
+#jumbo-1  .griglia-jumbo .cs-active {
     border-color: #0072ce;
 }
 
@@ -151,7 +187,7 @@ header nav .cs-cerca img {
     padding: 50px 0;
     color: white;
 }
-#jumbo-2 .griglia{
+#jumbo-2 .griglia-jumbo{
     background-color: #1f1f1f;
     color: white;
 }
@@ -163,7 +199,7 @@ header nav .cs-cerca img {
 #jumbo-2 h4 {
     font-size: 1.5rem;
 }
-#jumbo-2 .griglia a span {
+#jumbo-2 .griglia-jumbo a span {
     display: block;
     margin-top: 10px;
     color: #fff;
@@ -177,14 +213,20 @@ header nav .cs-cerca img {
 }
 
 
+#jumbo-4 .jumbo-display {
+    background-image: none;
+    background-color: #161c3b;
+    padding: 0;
+    color: #f5f5f5;
+}
 
-#jumbo-3 #ps5 .cs-cont_img{
+
+#jumbo-3 .cs-cont_img, #jumbo-4 .cs-cont_img,
+#ps5 .cs-cont_img {
     max-width: initial;
     width: 100%;
     margin-bottom: 0;
 }
-
-/* section play station 5 */
 
 #ps5 .jumbo-display {
     background-image: none;
@@ -235,8 +277,7 @@ header nav .cs-cerca img {
 
 }
 
-/* section play station 4 */
-#ps4{
+#ps4 {
     margin-bottom: 70px;
 }
 
@@ -251,7 +292,16 @@ header nav .cs-cerca img {
     margin-bottom: 20px;
 }
 
- .titolo h2 {
+
+#sconti-ps {
+    margin-bottom: 30px;
+}
+
+#social {
+    max-width: 580px;
+    margin: 50px auto;
+}
+#social .titolo h2 {
     font-size: 2rem;
 }
 
@@ -277,4 +327,44 @@ header nav .cs-cerca img {
 .titolo h4 {
     font-size: 1.3rem;
     color: #727272;
+}
+
+/* footer */
+footer{
+    background-color: #00439c;
+    padding: 80px 0;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+footer a, footer a:hover {
+    color: #fff;
+}
+
+footer .logo {
+    width: 96px;
+    display: block;
+    margin-bottom: 40px;
+}
+#country {
+    width: 20px;
+    margin-right: 10px;
+}
+
+footer li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+#info{
+    color: #fff;
+}
+
+#info a, #info a:hover{
+    text-decoration: underline;
+}
+
+#info img {
+    height: 48px;
+    margin-bottom: 10px;
 }
