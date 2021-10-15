@@ -56,18 +56,6 @@ sup {
     box-shadow: inset 0px 0px 0px 2px #161c3b;
 }
 
-.btn-light2 {
-    background-color: white;
-    border-color: white;
-    color: #2d64e6;
-}
-.btn-light2:hover {
-    background-color: white;
-    border-color: white;
-    box-shadow: 0px 0px 0px 3px rgba(217, 218, 220, .3);
-    color: #2d64e6;
-}
-
 header{
     font-family: Arial, Helvetica, sans-serif;
     height: 100px;
@@ -221,8 +209,8 @@ header nav .cs-cerca img {
 }
 
 
-#jumbo-3 .cs-cont_img, #jumbo-4 .cs-cont_img,
-#ps5 .cs-cont_img {
+#jumbo-3 .container-img, #jumbo-4 .container-img,
+#ps5 .container-img {
     max-width: initial;
     width: 100%;
     margin-bottom: 0;
